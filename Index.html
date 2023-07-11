@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Empresas</title>
+</head>
+<body>
+  <h1>Empresas</h1>
+  <button onclick="redireccionar()">Ir a una página</button>
+    <script>
+    function redireccionar() {
+      var paginas = [
+        "https://instagram.com/yenagl?igshid=YmM0MjE2YWMzOA==",
+        "https://instagram.com/roseslabelss?igshid=YmM0MjE2YWMzOA==",
+        "https://instagram.com/roses.confesiones?igshid=YmM0MjE2YWMzOA=="
+      ];
+
+      var paginaAleatoria = paginas[Math.floor(Math.random() * paginas.length)];
+      window.location.href = paginaAleatoria;
+    }
+  </script>
+</body>
+</html>
